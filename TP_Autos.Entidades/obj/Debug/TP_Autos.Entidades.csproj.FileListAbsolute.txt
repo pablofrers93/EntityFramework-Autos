@@ -1,0 +1,6 @@
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Entidades\bin\Debug\TP_Autos.Entidades.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Entidades\bin\Debug\TP_Autos.Entidades.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Entidades\obj\Debug\TP_Autos.Entidades.csproj.AssemblyReference.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Entidades\obj\Debug\TP_Autos.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Entidades\obj\Debug\TP_Autos.Entidades.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Entidades\obj\Debug\TP_Autos.Entidades.pdb

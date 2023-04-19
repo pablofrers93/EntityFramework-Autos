@@ -13,3 +13,5 @@ C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\obj\Debug\TP_Autos.Consola.csproj.CopyComplete
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\obj\Debug\TP_Autos.Consola.exe
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\obj\Debug\TP_Autos.Consola.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\bin\Debug\TP_Autos.Entidades.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\bin\Debug\TP_Autos.Entidades.pdb

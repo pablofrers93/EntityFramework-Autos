@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TP_Autos.Entidades
 {
-    public partial class Venta
+    public partial class Venta 
     {
         public int VentasId { get; set; }
         public string Patente { get; set; }

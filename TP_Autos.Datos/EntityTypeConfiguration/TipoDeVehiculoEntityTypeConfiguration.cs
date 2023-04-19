@@ -15,6 +15,7 @@ namespace TP_Autos.Datos.EntityTypeConfiguration
             ToTable("TiposDeVehiculos");
             HasKey(t => t.TipoDeVehiculoId);
             Property(t => t.Descripcion).IsRequired().HasMaxLength(50);
+            HasMany(e => e.Autos).WithRequired(e => e.TiposDeVehiculo).WillCascadeOnDelete(false);
         }
     }
 }

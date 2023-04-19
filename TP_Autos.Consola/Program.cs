@@ -11,17 +11,24 @@ namespace TP_Autos.Consola
     {
         static void Main(string[] args)
         {
+            //ProbarListadoAEleccion();
+
+            
+
+        }
+
+        private static void ProbarListadoAEleccion()
+        {
             using (AutosDbContext db = new AutosDbContext())
             {
                 var listaAutos = db.Autos.ToList();
 
                 foreach (var auto in listaAutos)
                 {
-                    Console.WriteLine($"{auto.Marca.m}, {auto.TiposDeVehiculo.Descripcion}, {auto.PrecioFinal}");
+                    Console.WriteLine($"{auto.Marca.NombreMarca}, {auto.TiposDeVehiculo.Descripcion}, {auto.PrecioFinal}");
                 }
                 Console.ReadLine();
             }
-
         }
     }
 }

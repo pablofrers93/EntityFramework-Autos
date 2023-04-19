@@ -9,3 +9,8 @@ C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.csproj.CopyComplete
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.dll
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\bin\Debug\TP_Autos.Entidades.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\bin\Debug\TP_Autos.Entidades.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.Migrations.InitialCatalog.resources
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.csproj.GenerateResource.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.Migrations.CreateCategoriasDeVendedoresTable.resources

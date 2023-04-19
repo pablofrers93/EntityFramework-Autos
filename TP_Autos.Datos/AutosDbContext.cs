@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
+using TP_Autos.Datos.EntityTypeConfiguration;
 using TP_Autos.Entidades;
 
 namespace TP_Autos.Datos
@@ -23,30 +24,20 @@ namespace TP_Autos.Datos
         public virtual DbSet<TipoDeVehiculo> TiposDeVehiculos { get; set; }
         public virtual DbSet<Vendedor> Vendedores { get; set; }
         public virtual DbSet<Venta> Ventas { get; set; }
-
+        public virtual DbSet<CategoriaDeVendedores> CategoriasDeVendedores { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Auto>()
-                .Property(e => e.Modelo)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Marca>()
-                .Property(e => e.NombreMarca)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Marca>()
-                .HasMany(e => e.Autos)
-                .WithRequired(e => e.Marca)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<TipoDeVehiculo>()
-                .HasMany(e => e.Autos)
-                .WithRequired(e => e.TiposDeVehiculo)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Venta>()
-                .Property(e => e.Monto)
-                .HasPrecision(19, 4);
+            modelBuilder.Configurations.Add(new AutoEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new ClienteEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new LocalidadEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new MarcaEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new PaisDeOrigenEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new ProvinciaEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new SucursalEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new TipoDeVehiculoEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new VendedorEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new VentaEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new CategoriaDeVendedoresEntityTypeConfiguration());
         }
     }
 }

@@ -16,6 +16,7 @@ namespace TP_Autos.Datos.EntityTypeConfiguration
             HasKey(v => v.VentasId);
             Property(v => v.Patente).IsRequired().HasMaxLength(255);
             Property(v => v.Monto).HasColumnType("money");
+            Property(e => e.Monto).HasPrecision(19, 4);
         }
     }
 }

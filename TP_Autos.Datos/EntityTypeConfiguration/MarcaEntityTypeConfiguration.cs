@@ -15,6 +15,8 @@ namespace TP_Autos.Datos.EntityTypeConfiguration
             ToTable("Marcas");
             HasKey(m => m.MarcaId);
             Property(m => m.NombreMarca).IsRequired().HasMaxLength(50);
+            Property(e => e.NombreMarca).IsUnicode(false);
+            HasMany(e => e.Autos).WithRequired(e => e.Marca).WillCascadeOnDelete(false);
 
         }
     }
