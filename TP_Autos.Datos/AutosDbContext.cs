@@ -2,10 +2,11 @@ using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
+using TP_Autos.Entidades;
 
 namespace TP_Autos.Datos
 {
-    public partial class AutosDbContext : DbContext
+    public class AutosDbContext : DbContext
     {
         public AutosDbContext()
             : base("name=AutosDbContext")
@@ -14,13 +15,13 @@ namespace TP_Autos.Datos
 
         public virtual DbSet<Auto> Autos { get; set; }
         public virtual DbSet<Cliente> Clientes { get; set; }
-        public virtual DbSet<Localidade> Localidades { get; set; }
+        public virtual DbSet<Localidad> Localidades { get; set; }
         public virtual DbSet<Marca> Marcas { get; set; }
-        public virtual DbSet<PaisesDeOrigen> PaisesDeOrigens { get; set; }
+        public virtual DbSet<PaisDeOrigen> PaisesDeOrigens { get; set; }
         public virtual DbSet<Provincia> Provincias { get; set; }
-        public virtual DbSet<Sucursale> Sucursales { get; set; }
-        public virtual DbSet<TiposDeVehiculo> TiposDeVehiculos { get; set; }
-        public virtual DbSet<Vendedore> Vendedores { get; set; }
+        public virtual DbSet<Sucursal> Sucursales { get; set; }
+        public virtual DbSet<TipoDeVehiculo> TiposDeVehiculos { get; set; }
+        public virtual DbSet<Vendedor> Vendedores { get; set; }
         public virtual DbSet<Venta> Ventas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -38,7 +39,7 @@ namespace TP_Autos.Datos
                 .WithRequired(e => e.Marca)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<TiposDeVehiculo>()
+            modelBuilder.Entity<TipoDeVehiculo>()
                 .HasMany(e => e.Autos)
                 .WithRequired(e => e.TiposDeVehiculo)
                 .WillCascadeOnDelete(false);

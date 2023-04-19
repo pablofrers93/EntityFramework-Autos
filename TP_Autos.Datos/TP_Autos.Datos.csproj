@@ -54,22 +54,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Auto.cs" />
     <Compile Include="AutosDbContext.cs" />
-    <Compile Include="Cliente.cs" />
-    <Compile Include="Localidade.cs" />
-    <Compile Include="Marca.cs" />
-    <Compile Include="PaisesDeOrigen.cs" />
+    <Compile Include="EntityTypeConfiguration\AutoEntityTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\ClienteEntityTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\LocalidadEntityTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\MarcaEntityTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\PaisDeOrigenEntityTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\ProvinciaEntityTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\SucursalEntityTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\TipoDeVehiculoEntityTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\VendedorEntityTypeConfiguration.cs" />
+    <Compile Include="EntityTypeConfiguration\VentaEntityTypeConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Provincia.cs" />
-    <Compile Include="Sucursale.cs" />
-    <Compile Include="TiposDeVehiculo.cs" />
-    <Compile Include="Vendedore.cs" />
-    <Compile Include="Venta.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TP_Autos.Entidades\TP_Autos.Entidades.csproj">
+      <Project>{ae1eb7e4-a39a-4292-a4b6-2fe2871bf45f}</Project>
+      <Name>TP_Autos.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -17,7 +17,7 @@ namespace TP_Autos.Consola
 
                 foreach (var auto in listaAutos)
                 {
-                    Console.WriteLine($"{auto.Marca.NombreMarca}, {auto.TiposDeVehiculo.Descripcion}, {auto.PrecioFinal}");
+                    Console.WriteLine($"{auto.Marca.m}, {auto.TiposDeVehiculo.Descripcion}, {auto.PrecioFinal}");
                 }
                 Console.ReadLine();
             }
