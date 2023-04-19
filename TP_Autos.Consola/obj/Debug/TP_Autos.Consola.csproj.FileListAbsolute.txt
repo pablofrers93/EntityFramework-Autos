@@ -1,0 +1,15 @@
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\bin\Debug\TP_Autos.Consola.exe.config
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\bin\Debug\TP_Autos.Consola.exe
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\bin\Debug\TP_Autos.Consola.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\bin\Debug\EntityFramework.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\bin\Debug\TP_Autos.Datos.dll
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\bin\Debug\TP_Autos.Datos.pdb
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\bin\Debug\EntityFramework.xml
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\obj\Debug\TP_Autos.Consola.csproj.AssemblyReference.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\obj\Debug\TP_Autos.Consola.csproj.SuggestedBindingRedirects.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\obj\Debug\TP_Autos.Consola.csproj.CoreCompileInputs.cache
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\obj\Debug\TP_Autos.Consola.csproj.CopyComplete
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\obj\Debug\TP_Autos.Consola.exe
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Consola\obj\Debug\TP_Autos.Consola.pdb
