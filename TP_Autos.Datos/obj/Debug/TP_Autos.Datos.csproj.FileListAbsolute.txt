@@ -14,3 +14,4 @@ C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.Migrations.InitialCatalog.resources
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.csproj.GenerateResource.cache
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.Migrations.CreateCategoriasDeVendedoresTable.resources
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.Migrations.CreateRelationshipBetweenCategoriaDeVendedoresAndVendedorTables.resources
