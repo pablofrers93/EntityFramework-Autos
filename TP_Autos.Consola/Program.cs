@@ -14,12 +14,13 @@ namespace TP_Autos.Consola
         static void Main(string[] args)
         {
             //ProbarListadoAEleccion();
-            GetVendedoresWithCategoriaVendedorId();
-            
+            //GetVendedoresWithCategoriaVendedorId();
+
 
         }
 
-        private static void GetVendedoresWithCategoriaVendedorId()
+
+    /*private static void GetVendedoresWithCategoriaVendedorId()
         {
             using (AutosDbContext db = new AutosDbContext())
             {
@@ -46,7 +47,7 @@ namespace TP_Autos.Consola
             }
             
         }
-
+        */
         private static void ProbarListadoAEleccion()
         {
             using (AutosDbContext db = new AutosDbContext())

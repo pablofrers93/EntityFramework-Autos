@@ -78,6 +78,10 @@
     <Compile Include="Migrations\202304210354184_RelationShipBetweenTables.designer.cs">
       <DependentUpon>202304210354184_RelationShipBetweenTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304210412188_DeleteCategoriaFieldFromVendedoresTable.cs" />
+    <Compile Include="Migrations\202304210412188_DeleteCategoriaFieldFromVendedoresTable.designer.cs">
+      <DependentUpon>202304210412188_DeleteCategoriaFieldFromVendedoresTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -99,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304210354184_RelationShipBetweenTables.resx">
       <DependentUpon>202304210354184_RelationShipBetweenTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304210412188_DeleteCategoriaFieldFromVendedoresTable.resx">
+      <DependentUpon>202304210412188_DeleteCategoriaFieldFromVendedoresTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

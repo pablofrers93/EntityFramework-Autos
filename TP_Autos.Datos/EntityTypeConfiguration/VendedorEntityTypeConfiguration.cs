@@ -16,7 +16,7 @@ namespace TP_Autos.Datos.EntityTypeConfiguration
             HasKey(v => v.VendedorId);
             Property(v => v.NombreyApellido).IsRequired().HasMaxLength(200);
             Property(v => v.Telefono).IsRequired().HasMaxLength(20);
-            Property(v => v.Categoria).IsRequired().HasMaxLength(10);
+            Property(v => v.CategoriaDeVendedoresId).IsRequired();
         }
     }
 }
