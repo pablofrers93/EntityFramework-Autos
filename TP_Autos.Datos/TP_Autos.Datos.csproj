@@ -86,6 +86,10 @@
     <Compile Include="Migrations\202304211718132_AddFieldComisionInVentasTable.designer.cs">
       <DependentUpon>202304211718132_AddFieldComisionInVentasTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304211850248_CreateRelationshipBetweenSucursalAndVentaTables.cs" />
+    <Compile Include="Migrations\202304211850248_CreateRelationshipBetweenSucursalAndVentaTables.designer.cs">
+      <DependentUpon>202304211850248_CreateRelationshipBetweenSucursalAndVentaTables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -113,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304211718132_AddFieldComisionInVentasTable.resx">
       <DependentUpon>202304211718132_AddFieldComisionInVentasTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304211850248_CreateRelationshipBetweenSucursalAndVentaTables.resx">
+      <DependentUpon>202304211850248_CreateRelationshipBetweenSucursalAndVentaTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -17,7 +17,9 @@ namespace TP_Autos.Entidades
 
         public int? AutoId { get; set; }
 
-        public int? SucursalId { get; set; }
+        public int SucursalId { get; set; }
         public decimal Comision { get; set; }
+
+        public virtual Sucursal Sucursal { get; set; }
     }
 }
