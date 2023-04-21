@@ -82,6 +82,10 @@
     <Compile Include="Migrations\202304210412188_DeleteCategoriaFieldFromVendedoresTable.designer.cs">
       <DependentUpon>202304210412188_DeleteCategoriaFieldFromVendedoresTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304211718132_AddFieldComisionInVentasTable.cs" />
+    <Compile Include="Migrations\202304211718132_AddFieldComisionInVentasTable.designer.cs">
+      <DependentUpon>202304211718132_AddFieldComisionInVentasTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -106,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304210412188_DeleteCategoriaFieldFromVendedoresTable.resx">
       <DependentUpon>202304210412188_DeleteCategoriaFieldFromVendedoresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304211718132_AddFieldComisionInVentasTable.resx">
+      <DependentUpon>202304211718132_AddFieldComisionInVentasTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
