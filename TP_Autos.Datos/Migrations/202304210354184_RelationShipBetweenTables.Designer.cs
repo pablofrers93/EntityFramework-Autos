@@ -7,13 +7,13 @@ namespace TP_Autos.Datos.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class CreateRelationshipBetweenCategoriaDeVendedoresAndVendedorTables : IMigrationMetadata
+    public sealed partial class RelationShipBetweenTables : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateRelationshipBetweenCategoriaDeVendedoresAndVendedorTables));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(RelationShipBetweenTables));
         
         string IMigrationMetadata.Id
         {
-            get { return "202304210214479_CreateRelationshipBetweenCategoriaDeVendedoresAndVendedorTables"; }
+            get { return "202304210354184_RelationShipBetweenTables"; }
         }
         
         string IMigrationMetadata.Source

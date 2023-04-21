@@ -74,9 +74,9 @@
     <Compile Include="Migrations\202304191842545_CreateCategoriasDeVendedoresTable.designer.cs">
       <DependentUpon>202304191842545_CreateCategoriasDeVendedoresTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202304210214479_CreateRelationshipBetweenCategoriaDeVendedoresAndVendedorTables.cs" />
-    <Compile Include="Migrations\202304210214479_CreateRelationshipBetweenCategoriaDeVendedoresAndVendedorTables.designer.cs">
-      <DependentUpon>202304210214479_CreateRelationshipBetweenCategoriaDeVendedoresAndVendedorTables.cs</DependentUpon>
+    <Compile Include="Migrations\202304210354184_RelationShipBetweenTables.cs" />
+    <Compile Include="Migrations\202304210354184_RelationShipBetweenTables.designer.cs">
+      <DependentUpon>202304210354184_RelationShipBetweenTables.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,8 +97,8 @@
     <EmbeddedResource Include="Migrations\202304191842545_CreateCategoriasDeVendedoresTable.resx">
       <DependentUpon>202304191842545_CreateCategoriasDeVendedoresTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304210214479_CreateRelationshipBetweenCategoriaDeVendedoresAndVendedorTables.resx">
-      <DependentUpon>202304210214479_CreateRelationshipBetweenCategoriaDeVendedoresAndVendedorTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202304210354184_RelationShipBetweenTables.resx">
+      <DependentUpon>202304210354184_RelationShipBetweenTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -12,5 +12,6 @@ namespace TP_Autos.Entidades
         public string Descripcion { get; set; }
 
         public virtual ICollection<Vendedor> Vendedores { get; set; }
+
     }
 }

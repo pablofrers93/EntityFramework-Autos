@@ -9,8 +9,10 @@ namespace TP_Autos.Entidades
         public string NombreyApellido { get; set; }
         public string Telefono { get; set; }
         public string Categoria { get; set; }
-        public int CategoriaDeVendedorId { get; set; }
 
-        public virtual CategoriaDeVendedores CategoriaDeVendedor { get; set; }
+        public int CategoriaDeVendedoresId { get; set; }
+
+        public virtual CategoriaDeVendedores CategoriaDeVendedores { get; set; }
+
     }
 }
