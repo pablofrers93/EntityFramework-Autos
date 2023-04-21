@@ -22,11 +22,11 @@ namespace TP_Autos.Consola
             //AddTwoRegistersToSucursalesTable();
             //AddSucursalIdToVentasTable();
             //AddPaisDeOrigenIdToAutosTable();
-            UpdateLocalidadIdAndProvinciaIdInTableClientes();
+            //UpdateLocalidadIdAndProvinciaIdInTableClientes();
 
         }
 
-        private static void UpdateLocalidadIdAndProvinciaIdInTableClientes()
+        /*private static void UpdateLocalidadIdAndProvinciaIdInTableClientes()
         {
             using (AutosDbContext db = new AutosDbContext())
             {
@@ -43,7 +43,7 @@ namespace TP_Autos.Consola
                 }
                 db.SaveChanges();
             }
-        }
+        }*/
         private static void AddPaisDeOrigenIdToAutosTable()
         {
              using (AutosDbContext db = new AutosDbContext())

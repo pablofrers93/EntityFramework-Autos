@@ -98,6 +98,18 @@
     <Compile Include="Migrations\202304212049167_CreateRelationshipBetweenAutosAndPaisDeOrigenTables.designer.cs">
       <DependentUpon>202304212049167_CreateRelationshipBetweenAutosAndPaisDeOrigenTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304212115375_DeleteLocalidadFieldFromClienteTable.cs" />
+    <Compile Include="Migrations\202304212115375_DeleteLocalidadFieldFromClienteTable.designer.cs">
+      <DependentUpon>202304212115375_DeleteLocalidadFieldFromClienteTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304212128251_CreateRelationshipBetweenClientesAndProvincias.cs" />
+    <Compile Include="Migrations\202304212128251_CreateRelationshipBetweenClientesAndProvincias.designer.cs">
+      <DependentUpon>202304212128251_CreateRelationshipBetweenClientesAndProvincias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304212137081_CreateRelationshipBetweenClientesAndLocalidades.cs" />
+    <Compile Include="Migrations\202304212137081_CreateRelationshipBetweenClientesAndLocalidades.designer.cs">
+      <DependentUpon>202304212137081_CreateRelationshipBetweenClientesAndLocalidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -134,6 +146,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304212049167_CreateRelationshipBetweenAutosAndPaisDeOrigenTables.resx">
       <DependentUpon>202304212049167_CreateRelationshipBetweenAutosAndPaisDeOrigenTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304212115375_DeleteLocalidadFieldFromClienteTable.resx">
+      <DependentUpon>202304212115375_DeleteLocalidadFieldFromClienteTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304212128251_CreateRelationshipBetweenClientesAndProvincias.resx">
+      <DependentUpon>202304212128251_CreateRelationshipBetweenClientesAndProvincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304212137081_CreateRelationshipBetweenClientesAndLocalidades.resx">
+      <DependentUpon>202304212137081_CreateRelationshipBetweenClientesAndLocalidades.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

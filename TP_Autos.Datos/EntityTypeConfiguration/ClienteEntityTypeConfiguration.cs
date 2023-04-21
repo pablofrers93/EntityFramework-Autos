@@ -17,9 +17,10 @@ namespace TP_Autos.Datos.EntityTypeConfiguration
             HasKey(c => c.ClienteId);
             Property(c => c.NombreApellido).IsRequired().HasMaxLength(200);
             Property(c => c.Dirección).IsRequired().HasMaxLength(120);
-            Property(c => c.Localidad).IsRequired().HasMaxLength(100);
             Property(c => c.Teléfono).IsRequired().HasMaxLength(20);
             Property(c => c.Sexo).IsRequired().HasMaxLength(1);
+            Property(c => c.ProvinciaId).IsRequired();
+            Property(c => c.LocalidadId).IsRequired();
         }
     }
 }
