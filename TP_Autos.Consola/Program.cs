@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TP_Autos.Datos;
+using TP_Autos.Entidades;
 
 namespace TP_Autos.Consola
 {
@@ -17,7 +18,35 @@ namespace TP_Autos.Consola
             //GetVendedoresWithCategoriaVendedorId();
             //AutoIdFieldRandomValuesVentasTable();
             //UpdateValorVentaInVentasTable();
+            AddTwoRegistersToSucursalesTable();
 
+        }
+
+        private static void AddTwoRegistersToSucursalesTable()
+        {
+            using (AutosDbContext db = new AutosDbContext())
+            {
+                var sucursal1 = new Sucursal();
+                sucursal1.NombreSucursal = "Ricciardi Automotores";
+                sucursal1.Calle = "Buenos Aires";
+                sucursal1.Altura = "595";
+                sucursal1.LocalidadId = 1;
+                sucursal1.ProvinciaId = 1;
+                sucursal1.CodigoPostal = "7240";
+
+                var sucursal2 = new Sucursal();
+                sucursal2.NombreSucursal = "Volkswagen Automotores";
+                sucursal2.Calle = "Castelli";
+                sucursal2.Altura = "1230";
+                sucursal2.LocalidadId = 1;
+                sucursal2.ProvinciaId = 1;
+                sucursal2.CodigoPostal = "7240";
+
+                db.Sucursales.Add(sucursal1);
+                db.Sucursales.Add(sucursal2);
+
+                db.SaveChanges();
+            }
         }
 
         private static void UpdateValorVentaInVentasTable()
