@@ -7,5 +7,7 @@ namespace TP_Autos.Entidades
     {
         public int PaisDeOrigenId { get; set; }
         public string NombrePais { get; set; }
+
+        public virtual ICollection<Auto> Autos { get; set; }
     }
 }

@@ -18,3 +18,5 @@ C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.Migrations.DeleteCategoriaFieldFromVendedoresTable.resources
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.Migrations.AddFieldComisionInVentasTable.resources
 C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.Migrations.CreateRelationshipBetweenSucursalAndVentaTables.resources
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.Migrations.AddPaisDeOrigenIdInAutosTable.resources
+C:\Users\pablo\OneDrive\Desktop\Instituto\Programacion 3ero\Trabajo_Practico_02_CodeFirst\TP_Autos\TP_Autos.Datos\obj\Debug\TP_Autos.Datos.Migrations.CreateRelationshipBetweenAutosAndPaisDeOrigenTables.resources

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Dynamic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using TP_Autos.Datos;
@@ -20,7 +21,49 @@ namespace TP_Autos.Consola
             //UpdateValorVentaInVentasTable();
             //AddTwoRegistersToSucursalesTable();
             //AddSucursalIdToVentasTable();
+            //AddPaisDeOrigenIdToAutosTable();
+            UpdateLocalidadIdAndProvinciaIdInTableClientes();
 
+        }
+
+        private static void UpdateLocalidadIdAndProvinciaIdInTableClientes()
+        {
+            using (AutosDbContext db = new AutosDbContext())
+            {
+                var listaClientes = db.Clientes.ToList();
+
+                foreach (var cliente in listaClientes)
+                {
+                    var localidad = db.Localidades.SingleOrDefault(l => l.Nombre == cliente.Localidad);
+                    if (localidad != null)
+                    {
+                        cliente.LocalidadId = localidad.LocalidadId;
+                        cliente.ProvinciaId = localidad.ProvinciaId;
+                    }
+                }
+                db.SaveChanges();
+            }
+        }
+        private static void AddPaisDeOrigenIdToAutosTable()
+        {
+             using (AutosDbContext db = new AutosDbContext())
+            {
+                var listaAutos = db.Autos.ToList();
+                var listaPaisesDeOrigenId = db.PaisesDeOrigen.Select(p => p.PaisDeOrigenId).ToList();
+                Random value = new Random();
+
+                foreach (var auto in listaAutos)
+                {
+                    int randIndex = value.Next(listaPaisesDeOrigenId.Count());
+                    int random = listaPaisesDeOrigenId[randIndex];
+                    var paisDeOrigen = db.PaisesDeOrigen.SingleOrDefault(a => a.PaisDeOrigenId == random);
+                    if (paisDeOrigen != null)
+                    {
+                        auto.PaisDeOrigenId = paisDeOrigen.PaisDeOrigenId;
+                    }
+                }
+                db.SaveChanges();
+            }
         }
 
         private static void AddSucursalIdToVentasTable()
@@ -43,7 +86,6 @@ namespace TP_Autos.Consola
                 }
                 db.SaveChanges();
             }
-            Console.ReadLine();
         }
 
         private static void AddTwoRegistersToSucursalesTable()

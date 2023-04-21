@@ -90,6 +90,14 @@
     <Compile Include="Migrations\202304211850248_CreateRelationshipBetweenSucursalAndVentaTables.designer.cs">
       <DependentUpon>202304211850248_CreateRelationshipBetweenSucursalAndVentaTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304211910345_AddPaisDeOrigenIdInAutosTable.cs" />
+    <Compile Include="Migrations\202304211910345_AddPaisDeOrigenIdInAutosTable.designer.cs">
+      <DependentUpon>202304211910345_AddPaisDeOrigenIdInAutosTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304212049167_CreateRelationshipBetweenAutosAndPaisDeOrigenTables.cs" />
+    <Compile Include="Migrations\202304212049167_CreateRelationshipBetweenAutosAndPaisDeOrigenTables.designer.cs">
+      <DependentUpon>202304212049167_CreateRelationshipBetweenAutosAndPaisDeOrigenTables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -120,6 +128,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304211850248_CreateRelationshipBetweenSucursalAndVentaTables.resx">
       <DependentUpon>202304211850248_CreateRelationshipBetweenSucursalAndVentaTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304211910345_AddPaisDeOrigenIdInAutosTable.resx">
+      <DependentUpon>202304211910345_AddPaisDeOrigenIdInAutosTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304212049167_CreateRelationshipBetweenAutosAndPaisDeOrigenTables.resx">
+      <DependentUpon>202304212049167_CreateRelationshipBetweenAutosAndPaisDeOrigenTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

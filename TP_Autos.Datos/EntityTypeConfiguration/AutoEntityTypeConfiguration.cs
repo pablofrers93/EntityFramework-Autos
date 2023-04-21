@@ -15,7 +15,8 @@ namespace TP_Autos.Datos.EntityTypeConfiguration
             ToTable("Autos");
             HasKey(a => a.AutoId);
             Property(a => a.Modelo).IsRequired().HasMaxLength(20);
-            Property(e => e.Modelo).IsUnicode(false);
+            Property(a => a.Modelo).IsUnicode(false);
+            Property(a => a.PaisDeOrigenId).IsRequired();
         }
     }
 }

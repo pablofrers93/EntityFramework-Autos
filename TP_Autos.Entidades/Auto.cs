@@ -14,6 +14,8 @@ namespace TP_Autos.Entidades
 
         public int TipoDeVehiculoId { get; set; }
 
+        public int PaisDeOrigenId { get; set; }
+        public virtual PaisDeOrigen PaisDeOrigen { get; set; }
         public virtual Marca Marca { get; set; }
 
         public virtual TipoDeVehiculo TiposDeVehiculo { get; set; }
