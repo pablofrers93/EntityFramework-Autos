@@ -18,8 +18,32 @@ namespace TP_Autos.Consola
             //GetVendedoresWithCategoriaVendedorId();
             //AutoIdFieldRandomValuesVentasTable();
             //UpdateValorVentaInVentasTable();
-            AddTwoRegistersToSucursalesTable();
+            //AddTwoRegistersToSucursalesTable();
+            //AddSucursalIdToVentasTable();
 
+        }
+
+        private static void AddSucursalIdToVentasTable()
+        {
+            using (AutosDbContext db = new AutosDbContext())
+            {
+                var listaVentas = db.Ventas.ToList();
+                var listaSucursalesId = db.Sucursales.Select(s => s.SucursalId).ToList();
+                Random value = new Random();
+
+                foreach (var venta in listaVentas)
+                {
+                    int randIndex = value.Next(listaSucursalesId.Count());
+                    int random = listaSucursalesId[randIndex];
+                    var sucursal = db.Sucursales.SingleOrDefault(s => s.SucursalId == random);
+                    if (sucursal != null)
+                    {
+                        venta.SucursalId = sucursal.SucursalId;
+                    }
+                }
+                db.SaveChanges();
+            }
+            Console.ReadLine();
         }
 
         private static void AddTwoRegistersToSucursalesTable()
