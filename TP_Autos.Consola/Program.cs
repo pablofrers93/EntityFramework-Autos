@@ -15,39 +15,64 @@ namespace TP_Autos.Consola
         {
             //ProbarListadoAEleccion();
             //GetVendedoresWithCategoriaVendedorId();
-
+            AutoIdFieldRandomValuesVentasTable();
 
         }
 
-
-    /*private static void GetVendedoresWithCategoriaVendedorId()
+        private static void AutoIdFieldRandomValuesVentasTable()
         {
+            
             using (AutosDbContext db = new AutosDbContext())
             {
-                var listaCategoriasDeVendedores = db.CategoriasDeVendedores.ToList();
+                var listaVentas = db.Ventas.ToList();
+                var listaAutosId = db.Autos.Select(a => a.AutoId).ToList();
+                Random value = new Random();
 
-                foreach (var categoria in listaCategoriasDeVendedores)
+                foreach (var venta in listaVentas)
                 {
-                    var listaVendedores = db.Vendedores.Where(v => v.Categoria.Contains(categoria.Descripcion)).ToList();
-
-                    if (listaVendedores.Count()>0)
+                    int randIndex = value.Next(listaAutosId.Count());
+                    int random = listaAutosId[randIndex];
+                    var auto = db.Autos.SingleOrDefault(a => a.AutoId == random) ;
+                    if (auto != null)
                     {
-                        var categoriaDeVendedor = db.CategoriasDeVendedores.SingleOrDefault(c=>c.Descripcion == categoria.Descripcion); 
+                        venta.AutoId = auto.AutoId;
+                        listaAutosId.Remove(random);
+                    }
+                }
+                db.SaveChanges();   
+            }
+            Console.ReadLine();
+        }
 
-                        if (categoriaDeVendedor!=null)
+
+        /*private static void GetVendedoresWithCategoriaVendedorId()
+            {
+                using (AutosDbContext db = new AutosDbContext())
+                {
+                    var listaCategoriasDeVendedores = db.CategoriasDeVendedores.ToList();
+
+                    foreach (var categoria in listaCategoriasDeVendedores)
+                    {
+                        var listaVendedores = db.Vendedores.Where(v => v.Categoria.Contains(categoria.Descripcion)).ToList();
+
+                        if (listaVendedores.Count()>0)
                         {
-                            foreach (var vendedor in listaVendedores)
+                            var categoriaDeVendedor = db.CategoriasDeVendedores.SingleOrDefault(c=>c.Descripcion == categoria.Descripcion); 
+
+                            if (categoriaDeVendedor!=null)
                             {
-                                vendedor.CategoriaDeVendedoresId = categoriaDeVendedor.CategoriaDeVendedoresId;
+                                foreach (var vendedor in listaVendedores)
+                                {
+                                    vendedor.CategoriaDeVendedoresId = categoriaDeVendedor.CategoriaDeVendedoresId;
+                                }
                             }
                         }
                     }
+                    db.SaveChanges();
                 }
-                db.SaveChanges();
+
             }
-            
-        }
-        */
+            */
         private static void ProbarListadoAEleccion()
         {
             using (AutosDbContext db = new AutosDbContext())
