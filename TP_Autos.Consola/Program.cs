@@ -15,8 +15,31 @@ namespace TP_Autos.Consola
         {
             //ProbarListadoAEleccion();
             //GetVendedoresWithCategoriaVendedorId();
-            AutoIdFieldRandomValuesVentasTable();
+            //AutoIdFieldRandomValuesVentasTable();
+            //UpdateValorVentaInVentasTable();
 
+        }
+
+        private static void UpdateValorVentaInVentasTable()
+        {
+            using (AutosDbContext db = new AutosDbContext())
+            {
+                var listaAutos = db.Autos.ToList();
+
+                foreach (var auto in listaAutos)
+                {
+                    var listaVentas = db.Ventas.Where(v=>v.AutoId == auto.AutoId).ToList();
+
+                    if (listaVentas.Count()>0)
+                    {
+                        foreach (var venta in listaVentas)
+                        {
+                            venta.Monto = auto.PrecioFinal;
+                        }
+                    }
+                }
+                db.SaveChanges();
+            }
         }
 
         private static void AutoIdFieldRandomValuesVentasTable()
