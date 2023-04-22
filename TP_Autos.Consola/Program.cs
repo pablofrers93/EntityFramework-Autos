@@ -5,6 +5,7 @@ using System.Dynamic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using TP_Autos.Datos;
 using TP_Autos.Entidades;
@@ -25,6 +26,36 @@ namespace TP_Autos.Consola
             //UpdateLocalidadIdAndProvinciaIdInTableClientes();
             //ListAutosbyMarca();
             //InformarVentasPorSucursal();
+            //Get3HighPricedCarsByCountry();
+        }
+
+        private static void Get3HighPricedCarsByCountry()
+        {
+            using (AutosDbContext db = new AutosDbContext())
+            {
+                var listaPaises = db.PaisesDeOrigen.ToList();
+                Console.WriteLine("+++++++++++++++++ Lista de Paises ++++++++++++++++++");
+
+                foreach (var pais in listaPaises)
+                {
+                    Console.WriteLine(pais.NombrePais);
+                }
+                Console.WriteLine("");
+                Console.WriteLine("Escriba el nombre del país para saber los 3 autos más caros:");
+
+                var paisElegido = Console.ReadLine();
+                var paisInDb = db.PaisesDeOrigen.SingleOrDefault(p => p.NombrePais == paisElegido);
+
+                Console.WriteLine("");
+                Console.WriteLine($"Estos son los 3 autos más caros del pais {paisElegido}: ");
+
+                var listaAutos = db.Autos.OrderByDescending(a => a.PrecioFinal).Where(a => a.PaisDeOrigenId == paisInDb.PaisDeOrigenId).ToList();
+                for(int i=0; i<3; i++)
+                {
+                    Console.WriteLine($"{listaAutos[i].Marca.NombreMarca}, {listaAutos[i].Modelo}, {listaAutos[i].PrecioFinal}");
+                }
+            }
+            Console.ReadLine();
         }
 
         private static void InformarVentasPorSucursal()
@@ -178,7 +209,7 @@ namespace TP_Autos.Consola
                 var listaAutos = db.Autos.ToList();
 
                 foreach (var auto in listaAutos)
-                {
+                { 
                     var listaVentas = db.Ventas.Where(v=>v.AutoId == auto.AutoId).ToList();
 
                     if (listaVentas.Count()>0)
