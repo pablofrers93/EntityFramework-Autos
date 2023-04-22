@@ -23,7 +23,35 @@ namespace TP_Autos.Consola
             //AddSucursalIdToVentasTable();
             //AddPaisDeOrigenIdToAutosTable();
             //UpdateLocalidadIdAndProvinciaIdInTableClientes();
+            //ListAutosbyMarca();
 
+        }
+
+        private static void ListAutosbyMarca()
+        {
+            using (AutosDbContext db = new AutosDbContext())
+            {
+                var listaAutos = db.Autos.ToList();
+                Console.WriteLine("***************MARCAS DE AUTOS DISPONIBLES:***************");
+
+                foreach (var auto in listaAutos)
+                {
+                    Console.WriteLine(auto.Marca.NombreMarca);
+                }
+                Console.WriteLine("***************MARCAS DE AUTOS DISPONIBLES:***************");
+                Console.WriteLine("Escriba la marca a listar: ");
+                var marca = Console.ReadLine();
+                Console.WriteLine("");
+
+                var listaAutosPorMarca = db.Autos.Where(p => p.Marca.NombreMarca == marca).ToList();
+                
+                foreach (var auto in listaAutosPorMarca)
+                {
+                    Console.WriteLine($"{auto.Marca.NombreMarca}, {auto.Modelo}, {auto.PrecioFinal}");
+                }
+
+            }
+            Console.ReadLine();
         }
 
         /*private static void UpdateLocalidadIdAndProvinciaIdInTableClientes()
