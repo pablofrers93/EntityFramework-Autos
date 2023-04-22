@@ -24,7 +24,35 @@ namespace TP_Autos.Consola
             //AddPaisDeOrigenIdToAutosTable();
             //UpdateLocalidadIdAndProvinciaIdInTableClientes();
             //ListAutosbyMarca();
+            //InformarVentasPorSucursal();
+        }
 
+        private static void InformarVentasPorSucursal()
+        {
+            using (AutosDbContext db = new AutosDbContext())
+            {
+                var listaSucursales = db.Sucursales.ToList();
+
+                foreach (var sucursal in listaSucursales)
+                {
+                    var listaVentas = db.Ventas.Where(v => v.SucursalId == sucursal.SucursalId).ToList();
+
+                    if (listaVentas.Count() > 0)
+                    {
+                        Console.WriteLine($"Sucursal: {sucursal.NombreSucursal}");
+                        Console.WriteLine($"Cantidad Vendida: {listaVentas.Count()}");
+                        var montoTotal = 0m;
+                        foreach (var venta in listaVentas)
+                        {
+                            montoTotal += venta.Monto;
+                        }
+                        Console.WriteLine($"Total recaudado por ventas: {montoTotal}");
+                        Console.WriteLine("");
+
+                    }
+                }
+            }
+            Console.ReadLine();
         }
 
         private static void ListAutosbyMarca()
