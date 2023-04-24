@@ -27,6 +27,39 @@ namespace TP_Autos.Consola
             //ListAutosbyMarca();
             //InformarVentasPorSucursal();
             //Get3HighPricedCarsByCountry();
+            //ListComissionsByVendedor();
+        }
+
+        private static void ListComissionsByVendedor()
+        {
+            using (AutosDbContext db = new AutosDbContext())
+            {
+                var listaVendedores = db.Vendedores.ToList();
+                Console.WriteLine("++++++++++++++++++++ COMISIONES POR VENTA +++++++++++++++++++++");
+                foreach (var vendedor in listaVendedores)
+                {
+                    var listaVentas = db.Ventas.Where(v=>v.VendedorId==vendedor.VendedorId);
+                    var comisionTotal = 0m;
+                    if (listaVentas!=null)
+                    {
+                        StringBuilder sb = new StringBuilder();
+                        foreach (var venta in listaVentas)
+                        {                            
+                            comisionTotal += venta.Comision;
+                            var auto = db.Autos.Where(a => a.AutoId == venta.AutoId);
+                            sb.AppendLine($"VENTA: {venta.VentasId}, " +
+                                                 $"{auto.SingleOrDefault().Marca.NombreMarca}," +
+                                                 $"{auto.SingleOrDefault().Modelo}");
+                        }
+                        Console.WriteLine("");
+                        Console.WriteLine($"VENDEDOR: {vendedor.NombreyApellido}, CANTIDAD VENTAS: {listaVentas.Count()}, COMISION TOTAL: {comisionTotal}");
+                        Console.WriteLine(sb.ToString());
+                    }
+               
+                    Console.WriteLine();
+                }
+            }
+            Console.ReadLine();
         }
 
         private static void Get3HighPricedCarsByCountry()
